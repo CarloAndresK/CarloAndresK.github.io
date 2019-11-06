@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="CV.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation">
+        <img class="logga" src="logga-removebg-preview.png">
+        <div class="toggle">
+            <i class="fa fa-bars menu"></i>
+        </div>
+        <ul>
+            <li><a href="#about-content">About</a></li>
+            <li><a href="#experience-content">Experience</a></li>
+            <li><a href="#resume-content">Resume</a></li>
+            <li><a href="#contact-content">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="top-content" id="about-content">
+        <div class="content-position">
+            <div>
+                <img src="profile-picture.jpg" class="profile-image">
+            </div>
+            <div class="profile-text">
+                <h1>Carlo Kovacevic</h1>
+                <h3>Kort om mig</h3>
+                <p>Jag är en hårt jobbande och ambitiös person med ett stort sinne för humor. Jag har som mål att försöka utvecklas mer inom flera områden av mitt liv. Jag vill fortsätta öka mina kunskaper inom IT och är alltid intresserad av att lära mig mer om de senaste metoderna och teknikerna. När jag inte arbetar gillar jag att aktivera mig fysiskt genom att träna på gym, mitt mål är att utmana mig själv mer när det kommer till fysisk träning då det är en stor del av mitt liv. Något som är viktigt för mig när det kommer till min framtida arbetsplats är att jag vill kunna känna mig stolt över det arbete jag gör. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content content-position" id="experience-content">
+        <div class="col col-1">
+            <div class="experience">
+                <div class="progressBar">
+                    <div class="title htmlColor">HTML5</div>
+                    <div class="progress html"></div>
+                    <div class="progress_value"></div>
+                </div>
+                <div class="progressBar">
+                    <div class="title cssColor">CSS3</div>
+                    <div class="progress css"></div>
+                    <div class="progress_value"></div>
+                </div>
+                <div class="progressBar">
+                    <div class="title jsColor">JavaScript</div>
+                    <div class="progress js"></div>
+                    <div class="progress_value"></div>
+                </div>
+                <div class="progressBar">
+                    <div class="title phpColor">PHP</div>
+                    <div class="progress php"></div>
+                    <div class="progress_value"></div>
+                </div>
+                <div class="progressBar">
+                    <div class="title cSharpColor">C#</div>
+                    <div class="progress cSharp"></div>
+                    <div class="progress_value"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content content-position" id="resume-content">
+        <div class="col col-2">
+            <h1>Vårdbiträde - Fålhagens hemtjänst</h1>
+            <h3>2013-2016</h3>
+            <p>Som vårdbiträde arbetade jag med att hjälpa äldre människor och människor med olika funktionsnedsättningar med deras vardagliga sysslor. De erfarenheter som jag tar med mig från detta jobb är främst hur man pratar och hanterar olika typer av människor, samt en djupare respekt för de äldre i vårat samhälle</p>
+        </div>
+    </br>
+        <div class="col col-3">
+            <h1>Webbdesigner/utvecklarer – Uppsala universitet</h1>
+            <h3>2019-2020</h3>
+            <p>Som webbdesigner hos Uppsala universitet får jag arbeta med allting som rör designen för de sidor som tillhör www.uu.se. Jag arbetar mycket med HTML och CSS för att ändra på designen för dessa sidor men en annan del av mitt arbete handlar också om att skapa och laga funktionaliteten på dessas sidor genom att antingen skapa helt nya komponenter eller genom att fixa buggar och göra förbättringar på redan existerande komponenter som används på sidorna. Allt arbete görs genom ett CMS som kallas infoglue och när jag arbetar med dessa komponenter sitter jag främst och arbetar med ett språk som heter JSP, men jag använder mig även av Javascript och Java. En annan del av mitt jobb handlar om att skapa custom sidor till andra organisationer som oftast har någon koppling till Uppsala universitet, det arbetet går oftast till på samma sätt som med www.uu.se  sidorna men med skillnaden att jag även arbetar en del med Adobe Illusatrator och Photoshop för att skapa mer unika utseenden. Att arbeta som webbdesigner för Uppsala universitet innebär att jag kontinuerligt måste tänka på om det arbete jag gör följer tillgänglighetsriklinjerna från WCAG 2.1   </p>
+        </div>
+    </section>
+
+    <section class="content content-position" id="contact-content">
+        <div class="col col-1">
+            <h1>Facebook</h1>
+            <h3>https://www.facebook.com/carlo.kovacevic</h3>
+            <a href="https://www.facebook.com/carlo.kovacevic"><i class="fa fa-facebook-square" id="icons"></i></a>
+        </div>
+        <div class="col col-2">
+            <h1>E-post</h1>
+            <h3>Carlokovac@hotmail.com</h3>
+            <a href=""><i class="fa fa-at" id="icons"></i></a>
+        </div>
+        <div class="col col-3">
+            <h1>LinkedIn</h1>
+            <h3>https://www.linkedin.com/in/carlo-kovacevic-062015147</h3>
+            <a href="https://www.linkedin.com/in/carlo-kovacevic-062015147"><i class="fa fa-linkedin" id="icons"></i></a>
+            
+            
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+
+        var $root = $('html, body');
+
+        $('a[href^="#"]').click(function() {
+            var href = $.attr(this, 'href');
+
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+
+            return false;
+        });
+
+        $(document).ready(function(){
+                $('.html').animate({width:'90%'},2000);
+                $('.css').animate({width:'75%'},2000);
+                $('.js').animate({width:'50%'},2000);
+                $('.php').animate({width:'25%'},2000);
+                $('.cSharp').animate({width:'70%'},2000);    
+            });
+
+    </script>
+</body>
+</html>
