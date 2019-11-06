@@ -1,6 +1,6 @@
 html {
   background: url(coach_bg01.jpg) no-repeat center center fixed;
- /* background-size: cover;*/
+  background-size: cover;
 /*  scroll-behavior:smooth; (seems like there is little support for this function*/
 }
 
