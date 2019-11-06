@@ -1,6 +1,6 @@
 html {
-  background: url(coach_bg01.jpg) no-repeat center center fixed;
-  background-size: cover;
+ /* background: url(coach_bg01.jpg) no-repeat center center fixed;*/
+ /* background-size: cover;*/
 /*  scroll-behavior:smooth; (seems like there is little support for this function*/
 }
 
@@ -50,6 +50,10 @@ img.logga {
     color: #fff;
 }
 
+.full-image {
+  background: url(coach_bg01.jpg) no-repeat center center fixed;
+}
+
 .navigation {
   position: fixed;
   top: 0;
@@ -72,7 +76,7 @@ img.logga {
   color: #fff;
   padding: 100px 40px 100px 40px;
   height: auto;
-  margin: 80px auto;
+  margin-top: 100px;
   font-family: 'Raleway', sans-serif;
 }
 
