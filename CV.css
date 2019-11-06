@@ -88,6 +88,7 @@ img.logga {
   margin-left: 15%;
   margin-right: 15%;
   line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 .resume-content {
@@ -95,13 +96,8 @@ img.logga {
   background-color: darkred;
 }
 
-.col {
-  padding-right: 30px;
-  position: relative;
-} 
-
 .profile-image {
-  width: 16%;
+  width: 20%;
   height: auto;
   float: left;
   margin-right: 4em;
@@ -111,6 +107,10 @@ img.logga {
 .profile-text {
   position: relative;
 }
+
+.col {
+  position: relative;
+} 
 
 .col-1 {
 
@@ -124,74 +124,106 @@ img.logga {
 
 }
 
+.experience {
+  margin: 50px auto;
+  width: 60%;
+}
 
+.progressBar {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background: #eeeeee;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px #222;
+}
 
+.title {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  padding-left: 10px;
+  float: left;
+  font-weight: bold;
+  color: #fff;
+  line-height: 2;
+  z-index: 1;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-shadow: 1px 1px 1px #000;
+}
 
+.progress_value {
+  position: relative;
+  float: right;
+  padding-right: 10px;
+  line-height: 2.5;
+  font-weight: bold;
+  color: #455a64;
+}
 
-          .experience{
-            margin: 50px auto;
-            width: 60%;
-          }
-          .progressBar{
-            position: relative;
-            width: 100%;
-            height: 30px;
-            background: #eeeeee;
-            margin-bottom: 20px;
-            border-radius: 20px;
-            box-shadow: 0 1px 2px #222;
-          }
-          .title{
-            position: absolute;
-            width: 100px;
-            height: 40px;
-            padding-left: 10px;
-            float: left;
-            font-weight: bold;
-            color: #fff;
-            line-height: 2;
-            z-index: 1;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            text-shadow: 1px 1px 1px #000;
-          }
-          .progress_value{
-            position: relative;
-            float: right;
-            padding-right: 10px;
-            line-height: 2.5;
-            font-weight: bold;
-            color: #455a64;
-          }
-          .progress{
-            height: 30px;
-            position: absolute;
-            border-radius: 20px;
-            box-shadow: 2px 0 2px #555;
-          }
-          .html{
-            background: #ec407a;
-          }
-          .css{
-            background: #ab47bc;
-          }
-          .js{
-            background: #5c6bc0;
-          }
-          .php{
-            background: #66bb6a;
-          }
-          .cSharp{
-            background: #ffca28;
-          }
-          @media (max-width: 720px) {
-            .main{
-              width: 90%;
-            }
-          }
+.progress {
+  height: 30px;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 2px 0 2px #555;
+}
 
+.html {
+  background: #ec407a;
+}
 
+.css {
+  background: #ab47bc;
+}
 
+.js {
+  background: #5c6bc0;
+}
+
+.php {
+  background: #66bb6a;
+}
+
+.cSharp {
+  background: #ffca28;
+}
+
+@media (max-width:1700px) {
+
+  .profile-image {
+    margin-right: 3em;
+  }
+
+}
+
+@media (max-width:1200px) {
+
+  .profile-image {
+    width: 20%;
+    margin-right: 2em;
+  }
+
+  .experience {
+    width: 75%;
+  }
+
+}
+
+@media (max-width:980px) {
+
+  .content-position {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .profile-image {
+    width: 25%;
+    margin-right: 1em;
+  }
+
+}
 
 @media (max-width:768px) {
 
@@ -214,12 +246,39 @@ img.logga {
     display: block;
   }
 
+  .experience {
+    width: 85%;
+  }
+
 }
+
+@media (max-width: 720px) {
+ 
+ .main{
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .profile-image {
+    width: 93%;
+    margin-right: 0em;
+  }
+
+}
+
 
 @media screen and (max-width: 360px) {
 
   .top-content {
     padding: 100px 40px 100px 40px;
+  }
+
+  .profile-image {
+    width: 93%;
+    margin-right: 0em;
   }
 
 }
