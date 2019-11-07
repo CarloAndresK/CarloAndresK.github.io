@@ -299,6 +299,10 @@ img.logga {
     width: 90%;
   }
 
+  .top-content {
+    background: #434242 !important;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -311,10 +315,6 @@ img.logga {
   .content-position {
     padding-left: 25px;
     padding-right: 25px;
-  }
-
-  .top-content {
-    background: #434242 !important;
   }
 
 }
