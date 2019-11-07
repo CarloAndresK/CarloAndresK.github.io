@@ -77,7 +77,7 @@ img.logga {
 }
 
 .top-content {
-  background: url(coach_bg01.jpg) center center fixed !important;
+  background: url(coach_bg01.jpg) center center fixed no-repeat !important;
   color: #fff;
   padding: 185px 40px 180px 40px;
   height: auto;
