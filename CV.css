@@ -259,6 +259,10 @@ img.logga {
     margin-right: 1em;
   }
 
+  .top-content {
+    background: #434242 !important;
+  }
+
 }
 
 @media (max-width:768px) {
@@ -289,10 +293,6 @@ img.logga {
   .content-position {
     padding-left: 50px;
     padding-right: 50px;
-  }
-
-  .top-content {
-    background: #434242 !important;
   }
 
 }
