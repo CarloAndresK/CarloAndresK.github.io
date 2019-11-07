@@ -117,30 +117,9 @@
             })
         })
 
-    /*function to animate the smooth scrolling*/
-        $(document).on('click', 'a[href^="#"]', function (event) {
-            event.preventDefault();
-
-            $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, 500);
-        });
-
         var $root = $('html, body');
 
         /*function that animates the dynamical progress bars*/
-        $('a[href^="#"]').click(function() {
-            var href = $.attr(this, 'href');
-
-            $root.animate({
-                scrollTop: $(href).offset().top
-            }, 500, function () {
-                window.location.hash = href;
-            });
-
-            return false;
-        });
-
         $(document).ready(function(){
                 $('.html').animate({width:'90%'},2000);
                 $('.css').animate({width:'75%'},2000);
