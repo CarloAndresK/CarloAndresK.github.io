@@ -117,7 +117,21 @@
             })
         })
 
+    /*function to animate the smooth scrolling of the page and also to change the url depending on what anchor link that is clicked*/
         var $root = $('html, body');
+
+
+        $('a[href^="#"]').click(function() {
+            var href = $.attr(this, 'href');
+
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+
+            return false;
+        });
 
         /*function that animates the dynamical progress bars*/
         $(document).ready(function(){
