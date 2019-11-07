@@ -109,12 +109,15 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
+
+    /*function that opens the navigation menu for smaller screens*/
         $(document).ready(function(){
             $('.menu').click(function(){
                 $('ul').toggleClass('active');
             })
         })
 
+    /*function to animate the smooth scrolling*/
         $(document).on('click', 'a[href^="#"]', function (event) {
             event.preventDefault();
 
@@ -125,6 +128,7 @@
 
         var $root = $('html, body');
 
+        /*function that animates the dynamical progress bars*/
         $('a[href^="#"]').click(function() {
             var href = $.attr(this, 'href');
 
