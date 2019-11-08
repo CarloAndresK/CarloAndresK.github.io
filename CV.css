@@ -20,7 +20,7 @@ ul {
 ul li {
   list-style: none;
   display: inline-block;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 ul li:hover {
@@ -32,6 +32,7 @@ ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
+  padding: 18px 2.5%;
 }
 
 img.logga {
@@ -279,6 +280,7 @@ img.logga {
     display: block;
     text-align: center;
     border-top: 1px solid dimgrey;
+    padding: 0;
   }
 
   .active {
