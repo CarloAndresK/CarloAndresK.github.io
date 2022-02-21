@@ -23,7 +23,7 @@ ul li {
 }
 
 ul li:hover {
-  background: #e91e63;
+  background: #000;
   transition: 0.3s;
 }
 
@@ -218,32 +218,12 @@ h3 {
   box-shadow: 2px 0 2px #555;
 }
 
-.html {
-  background: #108787;
+.progress {
+  background: #22c3c3;
 }
 
-.css {
-  background: #3a65db;
-}
-
-.js {
-  background: #108787;
-}
-
-.php {
-  background: #3a65db;
-}
-
-.cSharp {
-  background: #108787;
-}
-
-.wp {
-  background: #3a65db;
-}
-
-.docker {
-  background: #108787;
+.progressBar:nth-child(odd) .progress {
+  background: #1babab;
 }
 
 .first {
@@ -358,7 +338,7 @@ h3 {
   }
 
   nav {
-    background-color: #000;
+    background-color: #434242;
   }
 
   ul {
@@ -369,7 +349,7 @@ h3 {
   ul li {
     display: block;
     text-align: center;
-    border-top: 1px solid #2ea0a0;
+    border-bottom: 1px solid #2ea0a0;
     padding: 0;
   }
 
@@ -415,6 +395,10 @@ h3 {
   .text.middle {
     font-size: 30px;
     position: relative;
+  }
+
+  h2 {
+    font-size: 18px;
   }
 
 }

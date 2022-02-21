@@ -3,13 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navigation">
         <div class="toggle">
-            <i class="fa fa-bars menu"></i>
+            <i class="menu fa fa-bars"></i>
         </div>
         <ul>
             <li><a href="#profile-content">Profil</a></li>
@@ -116,6 +116,11 @@
                     <div class="progress docker"></div>
                     <div class="progress_value"></div>
                 </div>
+                <div class="progressBar">
+                    <div class="title gitColor">Git</div>
+                    <div class="progress git"></div>
+                    <div class="progress_value"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -139,7 +144,8 @@
     /*function that opens the navigation menu for smaller screens*/
         $(document).ready(function(){
             $('.menu').click(function(){
-                $('ul').toggleClass('active');
+                $('ul').slideToggle('500').toggleClass('active');
+                $('.toggle').find('i').toggleClass('fa fa-bars fa fa-times')
             })
         })
 
@@ -168,6 +174,7 @@
                 $('.cSharp').animate({width:'30%'},2000);
                 $('.wp').animate({width:'70%'},2000);
                 $('.docker').animate({width:'50%'},2000);
+                $('.git').animate({width:'60%'},2000);
             });
 
     </script>
