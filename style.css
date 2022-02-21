@@ -7,7 +7,7 @@ body {
 
 nav {
   width: 100%;
-  background: #2ea0a0;
+  background: #000000cf;
   z-index: 2;
 }
 
@@ -20,7 +20,6 @@ ul {
 ul li {
   list-style: none;
   display: inline-block;
-  padding: 0 20px;
 }
 
 ul li:hover {
@@ -32,7 +31,7 @@ ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 18px 2.5%;
+  padding: 18px 15px;
 }
 
 img.logga {
@@ -44,8 +43,7 @@ img.logga {
 .section-title {
   font-size: 35px;
   text-align: center;
-  margin-bottom: 50px;
-  color: #2ea0a0;
+  color: #108787;
 }
 
 #icons {
@@ -59,10 +57,22 @@ img.logga {
   width: 100%;
 }
 
+h1 {
+  margin: 10px 0 15px 0;
+}
+
+h2 {
+  margin: 5px 0 10px 0;
+}
+
+h3 {
+  margin: 5px 0 10px 0;
+}
+
 .toggle {
   width: 100%;
   padding: 10px 20px;
-  background: #2ea0a0;
+  background: #108787;
   text-align: right;
   box-sizing: border-box;
   color: #fff;
@@ -73,21 +83,24 @@ img.logga {
 .content {
   background-color: #000000ab;
   color: #fff;
-  padding: 100px 40px 100px 40px;
   height: auto;
   font-family: 'Raleway', sans-serif;
 }
 
+.parallax {
+  background: url('bg-abstract.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .top-content {
-  background: url(coach_bg01.jpg) center center fixed no-repeat !important;
   color: #fff;
-  padding: 185px 40px 180px 40px;
   height: auto;
   font-family: 'Raleway', sans-serif;
 }
 
 #profile-content {
-  background: #f3efe0;
+
 }
 
 #experience-content {
@@ -96,17 +109,19 @@ img.logga {
 }
 
 #abilities-content {
-  background: #f3efe0;
+
 }
 
 #contact-content {
-  background: #434242;
+  background: #000;
 }
 
 .contact-info {
   color: #b4b3b3;
   text-decoration: none;
-  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info:hover {
@@ -116,8 +131,9 @@ img.logga {
 .content-position {
   padding-left: 350px;
   padding-right: 350px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   line-height: 1.5;
-  overflow-wrap: break-word;
 }
 
 .resume-content {
@@ -125,16 +141,21 @@ img.logga {
   background-color: darkred;
 }
 
+.profile-content {
+  display: flex;
+  align-items: center;
+}
+
 .profile-image {
-  width: 20%;
-  height: auto;
-  float: left;
-  margin-right: 4em;
-  border: 5px solid #fff;
+  max-width: 200px;
+  width: 100%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 0 #fff;
 }
 
 .profile-text {
   position: relative;
+  font-size: larger;
 }
 
 .col {
@@ -198,23 +219,101 @@ img.logga {
 }
 
 .html {
-  background: #ec407a;
+  background: #108787;
 }
 
 .css {
-  background: #ab47bc;
+  background: #3a65db;
 }
 
 .js {
-  background: #5c6bc0;
+  background: #108787;
 }
 
 .php {
-  background: #66bb6a;
+  background: #3a65db;
 }
 
 .cSharp {
-  background: #ffca28;
+  background: #108787;
+}
+
+.wp {
+  background: #3a65db;
+}
+
+.docker {
+  background: #108787;
+}
+
+.first {
+  height: 100vh;
+  background-color: black;
+}
+
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 14px;
+}
+
+.text::before,.text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.text::before {
+  color: #ff0000;
+  animation: glitch-effect 3s infinite;
+}
+
+.text::after {
+  color: #34d0db;
+  animation: glitch-effect 2s infinite;
+}
+
+@keyframes glitch-effect {
+
+  0%{
+    left: -2px;
+    top: -2px;
+  }
+
+  25%{
+    left: 2px;
+    top: 0px;
+  }
+
+  50%{
+    left: -1px;
+    top: 2px;
+  }
+
+  75%{
+    left: 1px;
+    top: -1px;
+  }
+
+  100%{
+    left: 0px;
+    top: -2px;
+  }
+
 }
 
 @media (max-width:1700px) {
@@ -271,6 +370,10 @@ img.logga {
     display: block;
   }
 
+  nav {
+    background-color: #000;
+  }
+
   ul {
     width: 100%;
     display: none;
@@ -279,7 +382,7 @@ img.logga {
   ul li {
     display: block;
     text-align: center;
-    border-top: 1px solid dimgrey;
+    border-top: 1px solid #2ea0a0;
     padding: 0;
   }
 
@@ -318,14 +421,19 @@ img.logga {
     padding-right: 25px;
   }
 
+  .text.middle {
+    font-size: 30px;
+    position: relative;
+  }
+
+  .text.middle {
+    font-size: 30px;
+    position: relative;
+  }
+
 }
 
-
 @media screen and (max-width: 360px) {
-
-  .top-content {
-    padding: 100px 40px 100px 40px;
-  }
 
   .profile-image {
     width: 93%;
